@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
-import coverImage from '@/images/cover.png'
+import coverImage from '@/images/Image.png'
 
 function Testimonial() {
   return (
@@ -13,15 +13,14 @@ function Testimonial() {
       </div>
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-slate-900">
-          “This method of designing icons is genius. I wish I had known this
-          method a lot sooner.”
+          “Just Wow. Cant say it enough, the results speak for themselves.”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">
         <strong className="font-semibold text-blue-600 before:content-['—_']">
-          Stacey Solomon
+          SW18: Katie
         </strong>
-        , Founder at Retail Park
+        , Proud new loft conversion
       </figcaption>
     </figure>
   )
@@ -39,7 +38,7 @@ export function Hero() {
               patternTransform="translate(112 64)"
             />
           </div>
-          <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-slate-600 shadow-xl md:w-80 lg:w-auto">
+          <div className="relative z-10 mx-auto flex w-64 rounded-xl shadow-xl md:w-80 lg:w-auto">
             <Image className="w-full" src={coverImage} alt="" priority />
           </div>
         </div>
@@ -50,18 +49,17 @@ export function Hero() {
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
-              Get lost in the world of icon design.
+            Get Planning Permission or Get Your Money Back
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-              A book and video course that teaches you how to design your own
-              icons from scratch.
+            Yes. We're  confident we can get you planning.
             </p>
             <div className="mt-8 flex gap-4">
               <Button href="#free-chapters" color="blue">
-                Get sample chapter
+                Learn more
               </Button>
               <Button href="#pricing" variant="outline" color="blue">
-                Buy book
+                Get In touch
               </Button>
             </div>
           </div>
