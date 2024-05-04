@@ -9,9 +9,9 @@ import videoPlayerImage from '@/images/resources/video-player.svg'
 
 const resources = [
   {
-    title: 'Figma icon templates',
+    title: 'Custom Design Templates',
     description:
-      'Pefectly structured templates for quickly designing new icons at dozens of common sizes.',
+      'Expertly crafted templates to jumpstart your architectural designs, suitable for various building types.',
     image: function FigmaImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
@@ -21,14 +21,14 @@ const resources = [
     },
   },
   {
-    title: 'Weekly icon teardowns',
+    title: 'Project Planning Guides',
     description:
-      'Weekly videos where we dissect and recreate beautiful icons we find on the web.',
+      'Detailed guides and videos to help you navigate the planning and execution phases of your projects.',
     image: function VideoPlayerImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 object-cover w-full h-full"
             src={abstractBackgroundImage}
             alt=""
             sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
@@ -44,9 +44,9 @@ const resources = [
     },
   },
   {
-    title: 'Community of icon designers',
+    title: 'Professional Networking Hub',
     description:
-      "A private Discord server where you can get help and give feedback on each others' work.",
+      "Connect with other professionals in the architecture industry through our exclusive online community.",
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
@@ -62,33 +62,30 @@ export function Resources() {
     <section
       id="resources"
       aria-labelledby="resources-title"
-      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      className="py-16 scroll-mt-14 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
         <SectionHeading number="3" id="resources-title">
-          Resources
+          Architectural Resources
         </SectionHeading>
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Tools and resources you can use to get started even faster and
-          progress even further.
+        <p className="mt-8 text-4xl font-bold tracking-tight font-display text-slate-900">
+          Essential tools and resources to enhance your architectural projects from concept to completion.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Design assets, icon teardowns, and a community of fellow icon
-          designers where you can ask questions, get feedback, and accelerate
-          your learning.
+          Access design templates, project planning guides, and a professional network to accelerate your architectural practice.
         </p>
       </Container>
       <Container size="lg" className="mt-16">
         <ol
           role="list"
-          className="-mx-3 grid grid-cols-1 gap-y-10 lg:grid-cols-3 lg:text-center xl:-mx-12 xl:divide-x xl:divide-slate-400/20"
+          className="grid grid-cols-1 -mx-3 gap-y-10 lg:grid-cols-3 lg:text-center xl:-mx-12 xl:divide-x xl:divide-slate-400/20"
         >
           {resources.map((resource) => (
             <li
               key={resource.title}
-              className="grid auto-rows-min grid-cols-1 items-center gap-8 px-3 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-1 xl:px-12"
+              className="grid items-center grid-cols-1 gap-8 px-3 auto-rows-min sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-1 xl:px-12"
             >
-              <div className="relative h-48 overflow-hidden rounded-2xl shadow-lg sm:h-60 lg:h-40">
+              <div className="relative h-48 overflow-hidden shadow-lg rounded-2xl sm:h-60 lg:h-40">
                 <resource.image />
               </div>
               <div>

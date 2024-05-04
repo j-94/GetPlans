@@ -20,11 +20,11 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Everything Starts as a Square - Get lost in the world of icon design
+          Transform Your Space with Expert Architecture Services
         </title>
         <meta
           name="description"
-          content="A book and video course that teaches you how to design your own icons from scratch. "
+          content="From concept to completion, we guide you through every step of the design and planning process."
         />
       </Head>
       <Hero />
@@ -32,30 +32,28 @@ export default function Home() {
       <NavBar />
       <TableOfContents />
       <Testimonial
-        id="testimonial-from-tommy-stroman"
+        id="testimonial-from-john-and-sarah"
         author={{
-          name: 'Tommy Stroman',
-          role: 'Front-end developer',
+          name: 'John and Sarah',
+          role: 'Homeowners',
           image: avatarImage1,
         }}
       >
         <p>
-          “I didn’t know a thing about icon design until I read this book. Now I
-          can create any icon I need in no time. Great resource!”
+          “GetPlans transformed our outdated house into a beautiful, modern home. Their attention to detail and expert guidance made the entire process stress-free.”
         </p>
       </Testimonial>
       <Screencasts />
       <Testimonial
-        id="testimonial-from-gerardo-stark"
+        id="testimonial-from-emily"
         author={{
-          name: 'Gerardo Stark',
-          role: 'Creator of Pandemicons',
+          name: 'Emily',
+          role: 'Business Owner',
           image: avatarImage2,
         }}
       >
         <p>
-          “I’ve tried to create my own icons in the past but quickly got
-          frustrated and gave up. Now I sell my own custom icon sets online.”
+          “We had a vision for our new office space, and GetPlans brought it to life. Their design team is top-notch, and they handled all the planning and construction details flawlessly.”
         </p>
       </Testimonial>
       <Resources />

@@ -105,16 +105,16 @@ const testimonials = [
 
 function Testimonial({ author, children }) {
   return (
-    <figure className="rounded-4xl p-8 shadow-md ring-1 ring-slate-900/5">
+    <figure className="p-8 shadow-md rounded-4xl ring-1 ring-slate-900/5">
       <blockquote>
         <p className="text-lg tracking-tight text-slate-900 before:content-['“'] after:content-['”']">
           {children}
         </p>
       </blockquote>
-      <figcaption className="mt-6 flex items-center">
+      <figcaption className="flex items-center mt-6">
         <div className="overflow-hidden rounded-full bg-slate-50">
           <Image
-            className="h-12 w-12 object-cover"
+            className="object-cover w-12 h-12"
             src={author.image}
             alt=""
             width={48}
@@ -136,7 +136,7 @@ export function Testimonials() {
   return (
     <section className="py-8 sm:py-10 lg:py-16">
       <Container className="text-center">
-        <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900">
+        <h2 className="text-4xl font-bold tracking-tight font-display text-slate-900">
           Some kind words from early customers...
         </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-600">
@@ -150,7 +150,7 @@ export function Testimonials() {
           <>
             <ul
               role="list"
-              className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 px-4 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
+              className="grid max-w-2xl grid-cols-1 gap-8 px-4 mx-auto mt-16 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
             >
               {testimonials
                 .map((column) => column[0])
